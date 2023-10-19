@@ -1,13 +1,179 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>subscription</ion-title>
+  <ion-toolbar class="new-background-color">
+    <ion-title>Logo</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">subscription</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div id="container">
+    
+    <div fxLayout="row" class="form">
+
+      <div class="subscribe">
+        <div fxLayout="row" class="formHeader">
+          <div class="subscribeHeading"> Subscribe </div>
+          <div class="subscribeDetails"> to our Monthly Surprise Box </div>
+        </div>
+        <div fxLayout="row" class="formFields">
+          <div class="contact_information">
+            <div class="contact_information_header"> Contact Information </div>
+            <div class="contact_information_fields">
+              <div class= "list">
+                <div class="row inputBox">
+                  <div>
+                    <label class = "item item-input">
+                      <span class = "input-label">Your Name</span>
+                   </label>
+                  </div>
+                  <div>
+                    <input type = "text" placeholder = "e.g Osama Alshathri" />
+                  </div>
+                </div>
+                <div class="row inputBox">
+                  <div>
+                    <label class = "item item-input">
+                      <span class = "input-label">Email</span>
+                   </label>
+                  </div>
+                  <div>
+                    <input type = "text" placeholder = "Osama@gmail.com" />
+                  </div>
+                </div>
+             </div>
+            </div>
+          </div>
+          <div class="child_information">
+            <div class="child_information_header"> Child’s Information </div>
+            <div class="child_information_fields">
+              <div class= "list">
+                <div class="row inputBox">
+                  <div>
+                    <label class = "item item-input">
+                      <span class = "input-label"t>Child’s Full Name</span>
+                   </label>
+                  </div>
+                  <div>
+                    <input type = "text" placeholder = "e.g Sarah Mohammad" />
+                  </div>
+                </div>
+                <div class="row inputBox">
+                  <div>
+                    <label class = "item item-input">
+                      <span class = "input-label"t>Child’s Date of Birth</span>
+                   </label>
+                  </div>
+                  <div>
+                    <input type = "text" placeholder = "Osama@gmail.com" />
+                  </div>
+                </div>
+                <div class="row inputBox">
+                  <div>
+                    <label class = "item item-input">
+                      <span class = "input-label"t>Grade</span>
+                   </label>
+                  </div>
+                  <div>
+                    <input type = "text" placeholder = "Osama@gmail.com" />
+                  </div>
+                </div>
+                <div class="row inputBox">
+                  <div>
+                    <label class = "item item-input">
+                      <span class = "input-label"t>Gender</span>
+                   </label>
+                  </div>
+                  <div>
+                    <input type = "text" placeholder = "Osama@gmail.com" />
+                  </div>
+                </div>
+             </div>
+            </div>
+            <div class="row topicsDiv">
+              <div class="topicsSelection">
+                <label class = "item item-input">
+                  <span class = "input-label">As a parent select any 3 topics</span>
+               </label>
+              </div>
+              <div class="topicsBtnBox">
+                <ion-button class="topicBtn">Arabic</ion-button>
+                <ion-button class="topicBtn">Islamic</ion-button>
+                <ion-button class="topicBtn">English</ion-button>
+                <ion-button class="topicBtn">History</ion-button>
+                <ion-button class="topicBtn">Sports</ion-button>
+              </div>
+            </div>
+            <div class="row" fxLayout="row" class="payment" fxLayout="column">
+              <div class="block">
+                <ion-button class="paymentBtn">Continue to payment</ion-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summaryHeader">
+          <div class="topHeader"> Summary </div>
+          <div class="bodyContent"> of your Monthly Surprise Box </div>
+        </div>
+        <div class="summaryContent">
+          <div class="mysteryBox">
+            <div class="row mysteryLabel">
+              <div>Mystery Box</div>
+              <div>SAR 456</div>
+            </div>
+            <div class="row mysteryContent">
+              <div>X 1</div>
+              <div>Monthly</div>
+            </div>
+          </div>
+          <div class="calculationBox">
+            <div class="row subTotal">
+              <div>Subtotal</div>
+              <div>SAR 456</div>
+            </div>
+            <div class="row subTotal">
+              <div>Shipping</div>
+              <div>Free</div>
+            </div>
+            <div class="row subTotal">
+              <div>Taxes</div>
+              <div>SAR 4.0</div>
+            </div>
+          </div>
+          <div class="row total">
+            <div class="bill">
+              <div>Total</div>
+              <div>SAR 456</div>
+            </div>
+            <div class="billPeriod">
+              <div></div>
+              <div>Monthly</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      <div fxLayout="row" class="footer">
+        <div class="logo">
+          Logo
+        </div>
+        <div class="tabs">
+          <div class="footerContent">Overview</div>
+          <div class="footerContent">Help</div>
+          <div class="footerContent">Privacy</div>
+        </div>
+        <div class="copyRightContent">
+          © 2077 MyEdu.
+        </div>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
