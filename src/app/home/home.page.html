@@ -1,20 +1,117 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="new-background-color">
     <ion-title>
-      Blank
+      Logo
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content [fullscreen]="true" >
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div fxLayout="row" class="firstcontent">
+      <div fxLayout="row">
+        <div fxLayout="row" fxLayout="column">
+          <div  class="block surprise">Discover the magic of our</div>
+          <div  class="block surprise">surprise box</div>
+        </div>
+        <div fxLayout="row" class="surpriseDesc" fxLayout="column">
+          <div  class="block">Unleash your child's curiosity with our educational subscription box </div>
+          <div  class="block">filled with fun and learning.</div>
+        </div>
+        <div fxLayout="row" class="btnBlock" fxLayout="column">
+          <div class="block">
+            <ion-button class="subscribeBtn">Subscribe Now</ion-button>
+          </div>
+        </div>
+        <div fxLayout="row" fxLayout="column">
+          <div>
+            <img src="../../assets/images/Placeholder_Image.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row" class="lastcontent" fxLayoutGap="10px">
+      <div padding class="background">
+        <div class="firstPara">
+          <div fxLayout="row" fxLayout="column">
+            <div  class="block discoverfirstHeader">Discover</div>
+            <div class="discoversecondHeader">
+              <div  class="block">How It Works: Subscribe and</div>
+              <div  class="block">Receive Your Surprise Box</div>
+            </div>
+          </div>
+          <div fxLayout="row" class="discoverBody" fxLayout="column">
+            <div  class="block">Subscribe to our surprise subscription box and give your child the gift of</div>
+            <div  class="block">learning. Each month, we curate a box filled with educational materials</div>
+            <div  class="block">tailored to your child's age and interests.</div>
+          </div>
+        </div>
+        <div fxLayout="row" fxLayoutGap="10px" class="lastPara">
+          <div class="contentBlock">
+            <div class="iconBlock">
+              <img class="iconImg" src="../../assets/images/subscribe.png">
+            </div>
+            <div class="headerBlock">
+              <div class="top">Step 1:</div>
+              <div class="bottom">Subscribe</div>
+            </div>
+            <div class="bodyBlock">
+              <div>Select a subscription plan that suits your child's </div>
+              <div>learning needs and preferences.</div>
+            </div>
+          </div>
+          <div class="contentBlock">
+            <div class="iconBlock">
+              <img class="iconImg" src="../../assets/images/personalizebox.png">
+            </div>
+            <div class="headerBlock">
+              <div class="top">Step 2:</div>
+              <div class="bottom">Personalise Your Box</div>
+            </div>
+            <div class="bodyBlock">
+              <div>Tell us about your child's age, interests, and learning</div>
+              <div> goals, and we'll customize their surprise box</div>
+              <div> accordingly.</div>
+            </div>
+          </div>
+          <div class="contentBlock">
+            <div class="iconBlock">
+              <img class="iconImg" src="../../assets/images/subscribebox.png">
+            </div>
+            <div class="headerBlock">
+              <div class="top">Step 3:</div>
+              <div class="bottom">Receive Your Surprise Box</div>
+            </div>
+            <div class="bodyBlock">
+              <div>Sit back and relax as your child eagerly awaits the </div>
+              <div>arrival of their monthly surprise box filled with </div>
+              <div> engaging learning materials.</div>
+            </div>
+          </div>
+        </div>
+        <div fxLayout="row" class="btnBlock" fxLayout="column">
+          <div class="block">
+            <ion-button class="subscribeBtn">Subscribe Now</ion-button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      <div fxLayout="row" class="footer">
+        <div fxLayout="row wrap" class="leftSide">
+          <div class="footerContent">Privacy Policy</div>
+          <div class="footerContent">Terms of Service</div>
+          <div class="footerContent">Cookies Settings</div>
+        </div>
+        <div class="rightSide">
+          <div class="copyRightContent">© 2023 MyEdu. All rights reserved.</div>
+        </div>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
