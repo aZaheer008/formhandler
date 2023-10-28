@@ -7,111 +7,96 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" >
-  <div id="container">
-    <div fxLayout="row" class="firstcontent">
-      <div fxLayout="row">
-        <div fxLayout="row" fxLayout="column">
-          <div  class="block surprise">Discover the magic of our</div>
-          <div  class="block surprise">surprise box</div>
-        </div>
-        <div fxLayout="row" class="surpriseDesc" fxLayout="column">
-          <div  class="block">Unleash your child's curiosity with our educational subscription box </div>
-          <div  class="block">filled with fun and learning.</div>
-        </div>
-        <div fxLayout="row" class="btnBlock" fxLayout="column">
-          <div class="block">
-            <ion-button (click)="goSubscribe()" class="subscribeBtn">Subscribe Now</ion-button>
-          </div>
-        </div>
-        <div fxLayout="row" fxLayout="column">
-          <div>
-            <img src="../../assets/images/Placeholder_Image.png">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div fxLayout="row" class="lastcontent" fxLayoutGap="10px">
-      <div padding class="background">
-        <div class="firstPara">
-          <div fxLayout="row" fxLayout="column">
-            <div  class="block discoverfirstHeader">Discover</div>
-            <div class="discoversecondHeader">
-              <div  class="block">How It Works: Subscribe and</div>
-              <div  class="block">Receive Your Surprise Box</div>
-            </div>
-          </div>
-          <div fxLayout="row" class="discoverBody" fxLayout="column">
-            <div  class="block">Subscribe to our surprise subscription box and give your child the gift of</div>
-            <div  class="block">learning. Each month, we curate a box filled with educational materials</div>
-            <div  class="block">tailored to your child's age and interests.</div>
-          </div>
-        </div>
-        <div fxLayout="row" fxLayoutGap="10px" class="lastPara">
-          <div class="contentBlock">
-            <div class="iconBlock">
-              <img class="iconImg" src="../../assets/images/subscribe.png">
-            </div>
-            <div class="headerBlock">
-              <div class="top">Step 1:</div>
-              <div class="bottom">Subscribe</div>
-            </div>
-            <div class="bodyBlock">
-              <div>Select a subscription plan that suits your child's </div>
-              <div>learning needs and preferences.</div>
-            </div>
-          </div>
-          <div class="contentBlock">
-            <div class="iconBlock">
-              <img class="iconImg" src="../../assets/images/personalizebox.png">
-            </div>
-            <div class="headerBlock">
-              <div class="top">Step 2:</div>
-              <div class="bottom">Personalise Your Box</div>
-            </div>
-            <div class="bodyBlock">
-              <div>Tell us about your child's age, interests, and learning</div>
-              <div> goals, and we'll customize their surprise box</div>
-              <div> accordingly.</div>
-            </div>
-          </div>
-          <div class="contentBlock">
-            <div class="iconBlock">
-              <img class="iconImg" src="../../assets/images/subscribebox.png">
-            </div>
-            <div class="headerBlock">
-              <div class="top">Step 3:</div>
-              <div class="bottom">Receive Your Surprise Box</div>
-            </div>
-            <div class="bodyBlock">
-              <div>Sit back and relax as your child eagerly awaits the </div>
-              <div>arrival of their monthly surprise box filled with </div>
-              <div> engaging learning materials.</div>
-            </div>
-          </div>
-        </div>
-        <div fxLayout="row" class="btnBlock" fxLayout="column">
-          <div class="block">
-            <ion-button (click)="goSubscribe()" class="subscribeBtn">Subscribe Now</ion-button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <ion-row size-lg="12" class="topContent">
+      <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="surprise"> Discover the magic of our </ion-col>
+      <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="surprise"> surprise box </ion-col>
+      <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="surpriseDesc firstDesc">Unleash your child's curiosity with our educational subscription box </ion-col>
+      <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="surpriseDesc">filled with fun and learning. </ion-col>
+      <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="btnBlock">
+        <ion-button (click)="goSubscribe()" class="subscribeBtn">Subscribe Now</ion-button>
+      </ion-col>
+      <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="block">
+        <img size-lg="12" size-xs="12" size-sm="12" size-md="12" src="../../assets/images/Placeholder_Image.png">
+      </ion-col>
+  </ion-row>
+  <ion-row size-lg="12" class="bottomContent">
+    <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="discoverfirstHeader">Discover</ion-col>
+    <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="discoversecondHeader">How It Works: Subscribe and</ion-col>
+    <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="discoversecondHeader">Receive Your Surprise Box</ion-col>
+    <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="discoverBody">
+      Subscribe to our surprise subscription box and give your child the gift of
+    </ion-col>
+    <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="discoverBody">
+      learning. Each month, we curate a box filled with educational materials
+    </ion-col>
+    <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="discoverBody">
+      tailored to your child's age and interests.
+    </ion-col>
+
+    <ion-col size-lg="4" size-xs="12" size-sm="12" size-md="4" class="block serviceBox" >
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock iconBlock">
+        <img src="../../assets/images/subscribe.png">
+      </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock top"> Step 1: </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock bottom"> Subscribe </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock bodyBlock firstRow"> Select a subscription plan that suits your child's </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock bodyBlock"> learning needs and preferences. </ion-row>
+    </ion-col>
+
+    <ion-col size-lg="4" size-xs="12" size-sm="12" size-md="4" class="block serviceBox" >
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock iconBlock">
+        <img src="../../assets/images/personalizebox.png">
+      </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock top"> Step 2: </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock bottom"> Personalise Your Box </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock bodyBlock firstRow"> Tell us about your child's age, interests, and learning </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock bodyBlock"> goals, and we'll customize their surprise box </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock bodyBlock"> accordingly. </ion-row>
+    </ion-col>
+
+    <ion-col size-lg="4" size-xs="12" size-sm="12" size-md="4" class="block serviceBox" >
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock iconBlock">
+        <img src="../../assets/images/subscribebox.png">
+      </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock top"> Step 3: </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock bottom"> Receive Your Surprise Box </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock bodyBlock firstRow"> Sit back and relax as your child eagerly awaits the </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock bodyBlock"> arrival of their monthly surprise box filled with </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="rowBlock bodyBlock"> engaging learning materials. </ion-row>
+    </ion-col>
+
+    <ion-col size-lg="12" size-xs="12" size-sm="12" size-md="12" class="btnBlock">
+      <ion-button (click)="goSubscribe()" class="subscribeBtn">Subscribe Now</ion-button>
+    </ion-col>
+
+  </ion-row>
 </ion-content>
 
 <ion-footer>
   <ion-toolbar>
     <ion-title>
-      <div fxLayout="row" class="footer">
-        <div fxLayout="row wrap" class="leftSide">
-          <div class="footerContent">Privacy Policy</div>
-          <div class="footerContent">Terms of Service</div>
-          <div class="footerContent">Cookies Settings</div>
-        </div>
-        <div class="rightSide">
-          <div class="copyRightContent">© 2023 MyEdu. All rights reserved.</div>
-        </div>
-      </div>
+      <ion-row size-xs="12" size-sm="12" class="footer footerlogosubscribe">
+        <ion-col size-xs="12" size-sm="12" class="footerLogoHeader">Logo</ion-col>
+        <ion-col size-xs="12" size-sm="12">Link One</ion-col>
+        <ion-col size-xs="12" size-sm="12">Link Two</ion-col>
+        <ion-col size-xs="12" size-sm="12">Link Three</ion-col>
+        <ion-col size-xs="12" size-sm="12">Link Four</ion-col>
+        <ion-col size-xs="12" size-sm="12">Link Five</ion-col>
+        <ion-col size-xs="12" size-sm="12">
+          <input type = "text" placeholder = "Enter Your email" />
+        </ion-col>
+        <ion-col size-xs="12" size-sm="12" >
+          <ion-button (click)="goSubscribe()" class="subscribeBtnFooter">Subscribe</ion-button>
+        </ion-col>
+        <ion-col size-xs="12" size-sm="12" class="policysubscript">By subscribing you agree to with our Privacy Policy</ion-col>
+      </ion-row>
+      <ion-row size-lg="12" size-xs="12" size-sm="12" size-md="12" class="footer">
+        <ion-col size-lg="1" size-xs="12" size-sm="12" size-md="12" class="footerContent">Privacy Policy</ion-col>
+        <ion-col size-lg="1" size-xs="12" size-sm="12" size-md="12" class="footerContent">Terms of Service</ion-col>
+        <ion-col size-lg="1" size-xs="12" size-sm="12" size-md="12" class="footerContent">Cookies Settings</ion-col>
+        <ion-col size-lg="7" size-xs="12" size-sm="12" size-md="12" class="copyRightContent"></ion-col>
+        <ion-col size-lg="2" size-xs="12" size-sm="12" size-md="12" class="copyRightContent">© 2023 MyEdu. All rights reserved.</ion-col>
+      </ion-row>
     </ion-title>
   </ion-toolbar>
 </ion-footer>

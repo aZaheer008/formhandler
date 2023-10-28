@@ -3,11 +3,11 @@
   color: white;
 }
 
-.firstcontent {
-  --background: none;
+.topContent {
   background-color: #AB95F9;
   padding-top: 100px;
 }
+
 #container {
   text-align: center;
 }
@@ -29,23 +29,36 @@
 }
 
 .surprise {
-  font-size: 56px;
+  font-size: 50px;
   color: #FFFFFF;
   font-weight: 900;
   font-family: Nunito Sans;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.block {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.firstDesc {
+  margin-top: 20px;
 }
 
 .surpriseDesc {
-  font-size: 22px;
+  font-size: 20px;
   color: #FFFFFF;
   font-weight: 500;
   font-family: Nunito Sans;
-  margin-top: 20px;
+  text-align: center;
 }
 
 .btnBlock {
   margin-top: 30px;
   padding-bottom: 100px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .subscribeBtn {
@@ -55,19 +68,14 @@
   border-radius: 10px ;
 }
 
-.block {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-div.background{
+.bottomContent {
   --background: none;
   background-color: #FFF9E6;
   background-image: url('../../assets/images/content_background.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
   height: auto;
   padding-top: 100px;
 }
@@ -76,6 +84,8 @@ div.background{
   font-size: 16px;
   font-weight: 500;
   font-family: Nunito Sans;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .discoversecondHeader {
@@ -83,6 +93,8 @@ div.background{
   font-weight: 500;
   font-family: Nunito Sans;
   margin-top: 10px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .discoverBody {
@@ -90,18 +102,12 @@ div.background{
   font-weight: 400;
   font-family: Nunito Sans;
   margin-top: 10px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.lastPara{
-  display: flex;
-  margin: auto;
-  margin-top: 100px;
-}
-
-.contentBlock {
-  width: 380px;
-  height: 268px;
-  margin: auto;
+.rowBlock {
+  justify-content: center;
 }
 
 .iconBlock {
@@ -110,30 +116,31 @@ div.background{
   width: 96px;
   border-radius: 144px;
   margin: auto;
+  align-items: center;
 }
 
-.iconImg {
-  margin-top: 20px;
+.serviceBox {
+  height: 268px;
+  margin-top: 50px;
 }
 
-.headerBlock{
-  margin-top: 40px;
-}
-
-.headerBlock .top {
+.serviceBox .top {
   font-size: 24px;
   font-weight: 700;
   font-family: Nunito Sans;
 }
 
-.headerBlock .bottom {
+.serviceBox .bottom {
   font-size: 32px;
   font-weight: 700;
   font-family: Nunito Sans;
 }
 
-.bodyBlock {
+.serviceBox .firstRow {
   margin-top: 10px;
+}
+
+.serviceBox .bodyBlock {
   font-size: 16px;
   font-weight: 400;
   font-family: Nunito Sans;
@@ -141,28 +148,58 @@ div.background{
 
 .footer {
   margin: auto;
-  display: flex;
   justify-content: space-between;
   width: 80%;
-  height: 54px;
   margin-top: 50px;
   padding-top: 20px;
   border-top: 1px solid;
-}
-
-.leftSide {
-  display: flex;
+  color: black;
 }
 
 .footerContent {
   font-size: 14px;
   font-weight: 400;
   font-family: Nunito Sans;
-  width: 130px;
 }
 
 .copyRightContent {
   font-size: 14px;
   font-weight: 400;
   font-family: Nunito Sans;
+  text-align: end;
+}
+
+.footerlogosubscribe {
+  display: none;
+}
+
+.subscribeBtnFooter {
+  --background: black;
+  border-radius: 10px ;
+}
+
+.footerLogoHeader {
+  font-size: 40px;
+  font-family: Nunito Sans;
+  font-weight: 700;
+}
+
+
+@media screen and (min-width : 320px) and (max-width : 768px) {
+
+  .footerlogosubscribe {
+    display: flex;
+
+    .policysubscript {
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+
+  .copyRightContent {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Nunito Sans;
+    text-align: start;
+  }
 }
